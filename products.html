@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Plazma Labs</title>
+<meta name="description" content="Plazma Labs — Serving, Protecting, Enriching lives. Explore the full product catalog, organized by therapeutic area — pain, infection, cardiac, respiratory, gastro, women's health, bone & nutrition, eye care and ayurvedic wellness.">
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/logo-icon.png" alt="Plazma Labs logo">
+      <span class="brand-name">Plazma <em>Labs</em></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <div class="nav-item-mega">
+        <a href="products.html" class="mega-trigger active">Products</a>
+        <div class="mega-panel">
+          <a href="products.html?area=pain" class="mega-link"><span class="dot" style="background:#c0392b;"></span>Pain &amp; Inflammation</a>
+          <a href="products.html?area=infection" class="mega-link"><span class="dot" style="background:#1c75bc;"></span>Anti-Infective</a>
+          <a href="products.html?area=cardiac" class="mega-link"><span class="dot" style="background:#b23b5e;"></span>Cardiac Care</a>
+          <a href="products.html?area=respiratory" class="mega-link"><span class="dot" style="background:#2f9e6a;"></span>Respiratory &amp; Allergy</a>
+          <a href="products.html?area=gastro" class="mega-link"><span class="dot" style="background:#c8791f;"></span>Gastro &amp; Liver Care</a>
+          <a href="products.html?area=women" class="mega-link"><span class="dot" style="background:#a53e8c;"></span>Women's Health</a>
+          <a href="products.html?area=bone" class="mega-link"><span class="dot" style="background:#5b4bb8;"></span>Bone, Nerve &amp; Nutrition</a>
+          <a href="products.html?area=eye" class="mega-link"><span class="dot" style="background:#0f8fae;"></span>Eye Care</a>
+          <a href="products.html?area=ayurveda" class="mega-link"><span class="dot" style="background:#5f9b32;"></span>Ayurvedic Wellness</a>
+        </div>
+      </div>
+      <a href="about.html">About Us</a>
+      <a href="mailto:plazma.labs@rediffmail.com?subject=Question%20for%20Plazma%20Labs&amp;body=Hello%20Plazma%20Labs%2C%0A%0AI%20have%20a%20question%3A%0A" class="nav-contact">Have a question?</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="page-brand-strip">
+  <div class="wrap page-brand-inner">
+    <img src="assets/logo-icon.png" alt="Plazma Labs logo">
+    <div>
+      <div class="page-brand-name">Plazma <em>Labs</em></div>
+      <div class="page-brand-slogan">Serving · Protecting · Enriching Lives</div>
+    </div>
+  </div>
+</section>
+
+<div class="product-toolbar-compact">
+  <div class="wrap toolbar-row">
+    <div class="area-tabs-scroll" id="areaTabs">
+      <button class="area-tab active" data-area="all">All Areas</button>
+      <button class="area-tab" data-area="pain">Pain &amp; Inflammation</button>
+      <button class="area-tab" data-area="infection">Anti-Infective</button>
+      <button class="area-tab" data-area="cardiac">Cardiac Care</button>
+      <button class="area-tab" data-area="respiratory">Respiratory &amp; Allergy</button>
+      <button class="area-tab" data-area="gastro">Gastro &amp; Liver Care</button>
+      <button class="area-tab" data-area="women">Women's Health</button>
+      <button class="area-tab" data-area="bone">Bone, Nerve &amp; Nutrition</button>
+      <button class="area-tab" data-area="eye">Eye Care</button>
+      <button class="area-tab" data-area="ayurveda">Ayurvedic Wellness</button>
+    </div>
+    <div class="toolbar-controls">
+      <select class="form-select" id="formSelect">
+        <option value="all">All Dosage Forms</option>
+        <option value="tablets">Tablets &amp; Capsules</option>
+        <option value="syrups">Syrups &amp; Suspensions</option>
+        <option value="injections">Injections</option>
+        <option value="formulations">Formulations</option>
+      </select>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search...">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="stage-wrap wrap" style="padding:0;" id="stageWrap">
+  <div class="product-stage" id="productStage"></div>
+  <div class="wrap">
+    <div class="stage-nav-bar">
+      <button class="stage-nav-btn" id="prevBtn">‹ Previous</button>
+      <span class="stage-position" id="stagePosition"></span>
+      <button class="stage-nav-btn" id="nextBtn">Next ›</button>
+    </div>
+  </div>
+</div>
+
+<div class="no-results" id="noResults" style="display:none;">
+  <p>No products match your search. Try a different term, area or dosage form.</p>
+</div>
+
+<section class="question-strip">
+  <div class="wrap question-strip-inner">
+    <div>
+      <span class="eyebrow">Need help?</span>
+      <h2>Have a question about a product?</h2>
+    </div>
+    <a href="mailto:plazma.labs@rediffmail.com?subject=Question%20about%20a%20Plazma%20Labs%20product&amp;body=Hello%20Plazma%20Labs%2C%0A%0AI%20have%20a%20question%20about%3A%0A" class="btn btn-outline-navy">Email Plazma Labs</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo-icon.png" alt="Plazma Labs logo">
+          <span class="brand-name">Plazma <em>Labs</em></span>
+        </div>
+        <p>A Mumbai-based pharmaceutical company serving, protecting and enriching lives through trusted formulations across 9 therapeutic areas.</p>
+        <span class="footer-slogan">Serving · Protecting · Enriching Lives</span>
+        <div class="footer-contact">
+          <strong>Have a question?</strong>
+          <a href="mailto:plazma.labs@rediffmail.com?subject=Question%20for%20Plazma%20Labs&amp;body=Hello%20Plazma%20Labs%2C%0A%0AI%20have%20a%20question%3A%0A">Email us at plazma.labs@rediffmail.com</a>
+        </div>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Therapeutic Areas</h5>
+        <ul>
+          <li><a href="products.html?area=pain">Pain &amp; Inflammation</a></li>
+          <li><a href="products.html?area=infection">Anti-Infective</a></li>
+          <li><a href="products.html?area=respiratory">Respiratory &amp; Allergy</a></li>
+          <li><a href="products.html?area=gastro">Gastro &amp; Liver Care</a></li>
+          <li><a href="products.html?area=women">Women's Health</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Certifications</h5>
+        <ul>
+          <li>WHO-GMP Certified</li>
+          <li>ISO Certified</li>
+          <li>Halal Certified</li>
+          <li>GMP Certified</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Plazma Labs. All rights reserved.</span>
+      <span>Mumbai, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function () {
+  const stage = document.getElementById('productStage');
+  const stageWrap = document.getElementById('stageWrap');
+  const stagePosition = document.getElementById('stagePosition');
+  const noResults = document.getElementById('noResults');
+  const areaTabs = document.querySelectorAll('.area-tab');
+  const formSelect = document.getElementById('formSelect');
+  const searchInput = document.getElementById('searchInput');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+
+  const AREA_COLORS = {
+    pain: '#c0392b', infection: '#1c75bc', cardiac: '#b23b5e',
+    respiratory: '#2f9e6a', gastro: '#c8791f', women: '#a53e8c',
+    bone: '#5b4bb8', eye: '#0f8fae', ayurveda: '#5f9b32'
+  };
+
+  let activeArea = 'all';
+  let activeForm = 'all';
+  let query = '';
+  let currentIndex = 0;
+  let filtered = [];
+
+  const params = new URLSearchParams(window.location.search);
+  const areaParam = params.get('area');
+  if (areaParam && AREA_LABELS[areaParam]) activeArea = areaParam;
+
+  const hash = window.location.hash.replace('#', '');
+  if (hash && CATEGORY_LABELS[hash]) activeForm = hash;
+
+  function stageHTML(p) {
+    const color = AREA_COLORS[p.area] || '#1c75bc';
+    const tagsHTML = p.tags.map(t => `<span class="pill">${t}</span>`).join('');
+    const mediaInner = p.image
+      ? `<img src="${p.image}" alt="${p.name} product packaging and information">`
+      : `<div class="card-no-photo-label">${p.name}</div>`;
+    return `
+      <div class="stage-media" style="--accent:${color};">
+        ${mediaInner}
+      </div>
+      <div class="stage-details">
+        <div class="stage-area-label" style="color:${color};">${AREA_LABELS[p.area]}</div>
+        <h2 class="stage-name">${p.name}${p.rx ? '<span class="rx-badge">Rx</span>' : ''}</h2>
+        <div class="stage-meta"><span class="form-badge">${p.form}</span></div>
+        ${p.use && p.use.toLowerCase() !== AREA_LABELS[p.area].toLowerCase() ? `<div class="stage-use">${p.use}</div>` : ''}
+        <div class="stage-composition-label">Composition</div>
+        <div class="stage-composition">${p.composition}</div>
+        <div class="stage-tags-label">Indicated For</div>
+        <div class="stage-tag-row">${tagsHTML}</div>
+        ${p.also ? `<div class="stage-also">Also available: <strong>${p.also}</strong></div>` : ''}
+      </div>
+    `;
+  }
+
+  function computeFiltered() {
+    let result = PRODUCTS.filter(p =>
+      (activeArea === 'all' || p.area === activeArea) &&
+      (activeForm === 'all' || p.category === activeForm)
+    );
+    if (query.trim()) {
+      const q = query.trim().toLowerCase();
+      result = result.filter(p =>
+        p.name.toLowerCase().includes(q) ||
+        p.composition.toLowerCase().includes(q) ||
+        p.use.toLowerCase().includes(q) ||
+        p.tags.some(t => t.toLowerCase().includes(q))
+      );
+    }
+    return result;
+  }
+
+  function render() {
+    filtered = computeFiltered();
+
+    if (filtered.length === 0) {
+      stageWrap.style.display = 'none';
+      noResults.style.display = 'block';
+      return;
+    }
+
+    stageWrap.style.display = '';
+    noResults.style.display = 'none';
+
+    if (currentIndex >= filtered.length) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = filtered.length - 1;
+
+    stage.innerHTML = stageHTML(filtered[currentIndex]);
+    stagePosition.textContent = `${currentIndex + 1} / ${filtered.length}`;
+    prevBtn.disabled = filtered.length <= 1;
+    nextBtn.disabled = filtered.length <= 1;
+  }
+
+  areaTabs.forEach(tab => {
+    if (tab.dataset.area === activeArea) tab.classList.add('active');
+    else tab.classList.remove('active');
+    tab.addEventListener('click', () => {
+      activeArea = tab.dataset.area;
+      areaTabs.forEach(t => t.classList.toggle('active', t === tab));
+      currentIndex = 0;
+      render();
+    });
+  });
+
+  formSelect.value = activeForm;
+  formSelect.addEventListener('change', (e) => {
+    activeForm = e.target.value;
+    currentIndex = 0;
+    render();
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    query = e.target.value;
+    currentIndex = 0;
+    render();
+  });
+
+  prevBtn.addEventListener('click', () => { currentIndex--; render(); });
+  nextBtn.addEventListener('click', () => { currentIndex++; render(); });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') { currentIndex--; render(); }
+    if (e.key === 'ArrowRight') { currentIndex++; render(); }
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
